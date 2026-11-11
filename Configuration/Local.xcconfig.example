@@ -1,0 +1,4 @@
+// Copy to Local.xcconfig and supply your own values, or select them in Xcode.
+// Keep the same bundle identifier when updating an already installed app.
+APP_BUNDLE_IDENTIFIER = com.yourname.PersonalFitness
+DEVELOPMENT_TEAM =

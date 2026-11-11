@@ -1,0 +1,11 @@
+OFFLINE FOOD AND EXERCISE CATALOGS — PersonalFitness
+
+Food: U.S. Department of Agriculture, Agricultural Research Service, Beltsville Human Nutrition Research Center. FoodData Central. SR Legacy, April 2018. Accessed October 18, 2026. https://fdc.nal.usda.gov/
+USDA publishes FoodData Central data as public domain / CC0 1.0 and requests source acknowledgement. Source terms: https://fdc.nal.usda.gov/ and https://creativecommons.org/publicdomain/zero/1.0/
+This selected generic-food catalog is not the entire USDA database. Values are per 100 g; no branded product equivalence or milliliter/gram density is inferred. Historical analytical/calculated data are not individually measured values for your food. Use your actual product label when relevant. Cottage cheese is not assumed to be paneer.
+
+Exercise text: Free Exercise DB by yuhonas and contributors. https://github.com/yuhonas/free-exercise-db
+Pinned commit: f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5.
+Public-domain dedication / Unlicense, reproduced in EXERCISE_LICENSE.txt. Attribution is retained voluntarily. No images, videos, GIFs, website code or ExerciseDB.io commercial dataset are included. Instructions are community source text, not personalized coaching or individually verified safety guidance.
+
+Each JSON resource records release, source URLs, download SHA-256 and record identifiers. Generated aliases are search aids, not proof of identical composition or interchangeable equipment. Original source descriptions and instructions are retained. No runtime API or network is used.

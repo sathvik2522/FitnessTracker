@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-20",
+  "full_scheme": {
+    "result": "Passed",
+    "exit_code": 0,
+    "total": 221,
+    "unit": 203,
+    "ui": 18,
+    "failures": 0,
+    "skips": 0,
+    "xcresult_runtime_warnings": 0,
+    "bundle": "work/scoring-review/EnergyComplete.xcresult"
+  },
+  "pure_package": {
+    "result": "Passed",
+    "exit_code": 0,
+    "total": 123,
+    "failures": 0,
+    "overlaps_hosted_tests": true
+  },
+  "iphone_architecture_build": {
+    "result": "BUILD SUCCEEDED",
+    "exit_code": 0,
+    "signing_allowed": false,
+    "log": "work/scoring-review/energy-device-final.log"
+  },
+  "signed_build": {
+    "result": "Interrupted waiting in macOS SecurityServer signature generation",
+    "exit_code": 75
+  },
+  "physical_install_performed": false,
+  "physical_health_validation_performed": false,
+  "approval_required_before_installation": true
+}

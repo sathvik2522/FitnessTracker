@@ -1,0 +1,6 @@
+// Shared defaults. Select your own team and a unique identifier in Xcode,
+// or override these settings in the ignored Configuration/Local.xcconfig.
+APP_BUNDLE_IDENTIFIER = com.personal.PersonalFitness
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

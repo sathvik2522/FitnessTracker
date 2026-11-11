@@ -1,0 +1,40 @@
+.DS_Store
+.build/
+.swiftpm/
+DerivedData/
+build/
+*.dSYM/
+*.xcarchive/
+*.swp
+*.xcuserstate
+xcuserdata/
+
+# Local signing, personal databases, credentials and generated artifacts
+Configuration/Local.xcconfig
+*.mobileprovision
+*.p12
+*.pfx
+*.p8
+*.pem
+*.key
+*.cer
+*.sqlite*
+*.db
+*.db-shm
+*.db-wal
+*.store*
+*.xcresult/
+*.app/
+*.ipa
+*.log
+*.crash
+*.ips
+.env
+.env.*
+!*.example
+
+# Optional Bundler development tooling
+.bundle/
+
+# User-created local data exports (bundled catalogs use different names)
+PersonalFitness-*.json

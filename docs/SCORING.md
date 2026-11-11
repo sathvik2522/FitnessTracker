@@ -1,0 +1,11 @@
+# Scoring and energy methods
+
+These transparent local heuristics are not medical advice, validated readiness measures, or reproductions of WHOOP or Bevel algorithms. Source: `PersonalFitness/Nutrition/WellnessScoring.swift`; configurable defaults below are not clinical thresholds.
+
+**Activity load (called Strain in parts of the UI):** reconcile overlapping representations for load only. If every valid completed session has an explicit RPE, sum duration in minutes × RPE; otherwise use summed workout minutes. If no qualifying workouts exist, use active kcal, then steps. Units never mix and workout calories are not added. Score = clamp(100 × min(1, load / target), 0, 100). With at least 7 eligible same-unit prior days in the 28-day window the default target is their median × target scale; otherwise provisional targets are 300 session-RPE units, 60 minutes, 500 active kcal or 10,000 steps.
+
+**Recovery:** default weights are sleep 40, HRV SDNN 30, resting heart rate 20, recent load 10. Sleep = clamp(100 × asleep minutes / 480). HRV = clamp(50 + 100 × (recent/baseline − 1)); resting HR = clamp(100 − 5 × max(0, recent − baseline)); recent load = clamp(100 − 50 × max(0, recent mean / baseline mean − 1)). Eligible components are weighted and renormalized; missing components are omitted. Defaults require a same-source 28-day baseline with at least 14 prior days and 2 recent days, plus minimum load coverage of 21/28 and 5/7 days. Range/MAD filters and duplicate checks apply; see code for exact boundaries.
+
+**Energy:** prefer same-day Health resting + active aggregates. Missing components may use explicitly configured Mifflin-style resting prediction `10×kg + 6.25×cm − 5×age + coefficient` (5 or −161) and an explicitly selected activity multiplier; otherwise an explicit daily total may be used. Predictions are prorated over the actual local-day duration. Historical predictions can be preserved. Balance = logged food − expenditure; negative is an estimated deficit. Neither balance nor short-term weight change directly measures fat change.
+
+A separate advanced-model research preview and its limits are documented in [RECOVERY_STRAIN_METHOD_V1.md](../RECOVERY_STRAIN_METHOD_V1.md); it is not the displayed legacy score.
